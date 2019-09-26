@@ -6,16 +6,18 @@
 
 .grey_bar {
   background-color: rgb(211, 211, 211);
-
+  border: 1px solid red;
   margin: 0;
   top: 0;
   right: 0;
   left: 0;
   position: fixed;
 }
-
+body {
+  height: 170rem;
+}
 .grey_bar_down {
-  background-color: rgb(211, 211, 211);
+  background-color: rgb(255, 51, 204);
 
   margin: 0;
   bottom: 0;
@@ -25,10 +27,27 @@
   position: fixed;
   float: right;
 }
+.text-box {
+  width: 80%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+}
+
+.Article-text {
+  font-size: 1rem;
+  width: 90%;
+}
 header h1 {
   color: black;
   font-size: 20px;
   padding-left: 5px;
+}
+.Article-img {
+  font-size: 2rem;
+  width: 100%;
+  background-color: gray;
+  height: 25rem;
 }
 .container_menu {
   color: red;
@@ -142,8 +161,8 @@ li {
 
   padding: 0;
 }
-.footer_grey {
-  background-color: rgb(211, 211, 211);
+.footer_menu {
+  background-color: rgb(255, 51, 204);
   margin: 0;
   height: 50px;
   right: 0;
@@ -152,13 +171,13 @@ li {
   position: fixed;
   bottom: 0;
 }
-.footer_grey_right {
+.footer_menu_right {
   float: right;
   color: black;
   font-size: 20px;
   padding-right: 12px;
 }
-.footer_grey_left {
+.footer_menu_left {
   float: left;
   padding-left: 20px;
   color: black;
@@ -168,4 +187,57 @@ li {
   list-style-type: none;
   text-decoration: none;
   color: Black;
+}
+.menu-bar2 {
+  background-color: gray;
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  z-index: 42;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.no-list {
+  text-decoration: none;
+  list-style: none;
+  padding-right: 1rem;
+  color: black;
+}
+.flex-box {
+  align-items: baseline;
+}
+.test {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0;
+  padding-top: 1%;
+
+  list-style: none;
+}
+.left {
+  justify-content: flex-start;
+}
+footer {
+  background: gray;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 100rem;
+}
+@media only screen and (max-width: 320px) {
+  .container_menu {
+    position: static;
+    color: red;
+    overflow: hidden;
+  }
+  .text-box {
+    padding-top: 5rem;
+  }
+
+  .draw_block:last-child {
+    margin-bottom: 5rem;
+  }
 }
